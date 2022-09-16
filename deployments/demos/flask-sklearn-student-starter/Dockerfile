@@ -1,4 +1,4 @@
-FROM python:3.7.3-stretch
+FROM python:3.8.1
 
 # Working Directory
 WORKDIR /app
@@ -9,4 +9,4 @@ COPY . app.py /app/
 # Install packages from requirements.txt
 # hadolint ignore=DL3013
 RUN pip install --upgrade pip &&\
-    pip install --trusted-host pypi.python.org -r requirements.txt
+    pip install -r requirements.txt
