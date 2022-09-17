@@ -11,10 +11,10 @@ docker ps
 # Tag locally before pushing to the Dockerhub
 # We have used a sample Dockerhub profile /sudkul
 # Replace sudkul/ with your Dockerhub profile
-docker tag python-helloworld sudkul/python-helloworld:v1.0.0
+docker tag python-helloworld monarene/python-helloworld:v1.0.0
 docker images
 # Log into the Dockerhub from your local terminal
 docker login
 # Replace sudkul/ with your Dockerhub profile
-docker push sudkul/python-helloworld:v1.0.0
+docker push monarene/python-helloworld:v1.0.0
 # Check the image in your Dockerhub online at 

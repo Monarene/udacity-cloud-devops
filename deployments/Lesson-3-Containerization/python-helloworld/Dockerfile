@@ -4,8 +4,5 @@ LABEL maintainer="Udacity"
 COPY . /app
 WORKDIR /app
 RUN pip install -r requirements.txt
-# Expose port 80
-EXPOSE 80
-
 # command to run on container start
 CMD [ "python", "app.py" ]
